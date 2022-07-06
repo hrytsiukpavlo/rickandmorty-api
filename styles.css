@@ -1,0 +1,91 @@
+html { 
+    scroll-behavior: smooth; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://wallpaper.dog/large/17058397.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.load-more {
+    margin: 1em 0;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+    color: white;
+    border: 1px solid white;
+}
+
+#search-btn {
+    margin: 0 1em;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    color: white;
+    border: 1px solid white;
+}
+
+#search-input {
+    width: 150px;
+    height: 25px;
+}
+
+.character {
+    width: 350px;
+    height: 90px;
+    margin: 2em;
+    box-shadow: 0 0 4px red;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px red;
+}
+
+.remove-btn {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    color: white;
+    border: 1px solid white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
